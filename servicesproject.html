@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service {
+            cursor: pointer;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .service:hover {
+            background-color: #ddd;
+        }
+
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Our Pharmacy Services</h1>
+        <nav>
+            <ul>
+                <li><a href="indexproject.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="productproject.html">Products</a></li>
+                <li><a href="contactusproject.html">Contact Us</a></li>            
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Services We Offer</h2>
+            <ul>
+                <li class="service" onclick="toggleServiceDetails(this)">
+                    Prescription Filling
+                    <p class="details">Our pharmacy offers efficient and reliable prescription filling services. We understand the importance of timely and accurate medication dispensing to support your health and well-being</p>
+                </li>
+
+                <li class="service" onclick="toggleServiceDetails(this)">
+                    Over-the-Counter Medications
+                    <p class="details">Our pharmacy provides a wide selection of over-the-counter medications to address common health concerns. Whether you need pain relief, cough medicine, or vitamins, we have you covered.</p>
+                </li>
+
+                <li class="service" onclick="toggleServiceDetails(this)">
+                    Health Consultations
+                    <p class="details">At our pharmacy, we offer one-on-one health consultations to address your individual health concerns. Our experienced pharmacists are here to provide personalized guidance and support.</p>
+                </li>
+
+                <li class="service" onclick="toggleServiceDetails(this)">
+                    Vaccinations
+                    <p class="details">We offer a variety of vaccinations, including but not limited to Flu Vaccines, COVID-19 Vaccines, Shingles Vaccines, Pneumococcal Vaccines, Travel Vaccines</p>
+                </li>            
+            </ul>     
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pharmacy Website</p>
+    </footer>
+
+    <script>
+        function toggleServiceDetails(serviceElement) {
+            var detailsElement = serviceElement.querySelector('.details');
+            detailsElement.style.display = (detailsElement.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff; /* Change link color to white */
+}
+
+section {
+  padding: 20px;
+}
+
+/* Add style for the welcome message */
+#welcome-message {
+  font-size: 18px;
+}
+
+/* Style for the slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Style for the footer */
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed; /* Change to fixed to stick at the bottom */
+  bottom: 0;
+  width: 100%;
+}
+/* Your existing CSS styles go here */
+
+/* Add this to style the slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}

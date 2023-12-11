@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Pharmacy</title>
+    <link rel="stylesheet" href="stylesproject.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Project Pharmacy</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="servicesproject.html">Services</a></li>
+                <li><a href="productproject.html">Products</a></li>
+                <li><a href="contactusproject.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Our Pharmacy</h2>
+        <p id="welcome-message">Loading...</p>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="path/to/your/image1.jpg" alt="Description for Image 1" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="path/to/your/image2.jpg" alt="Description for Image 2" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Discover our rich history and commitment to your health.</p>
+        <a href="aboutus.html">Learn More</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us.</p>
+        <a href="contactusproject.html">Contact Us</a>
+
+        <!-- Example of forms validation -->
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Project Pharmacy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+

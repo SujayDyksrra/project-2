@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesproject.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="indexproject.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="servicesproject.html">Services</a></li>
+                <li><a href="productproject.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="/submit_contact" method="post" onsubmit="return validateForm()">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><hr>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><hr>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><hr>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pharmacy Website</p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+
+            // You can add more advanced validation logic here if needed.
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</body>
+</html>
+s

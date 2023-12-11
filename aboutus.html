@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="stylesproject.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="indexproject.html">Home</a></li>
+                <li><a href="servicesproject.html">Services</a></li>
+                <li><a href="productproject.html">Products</a></li>
+                <li><a href="contactusproject.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-us">
+            <h1>Our Pharmacy</h1>
+            <img src="images.jpeg" width="300px" id="about-image">
+            <p id="about-text"><strong>We are a trusted pharmacy dedicated to serving our community's health needs. Established in 1841, we've grown from just one small dispensary into the world's largest international health & beauty retailer, operating over 16,100 stores in 28 markets. AS Project Group is one of the longest-standing companies in Malaysia, and possibly even the world. </strong></p>
+            <button id="read-more-btn" onclick="toggleReadMore()">Read More</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pharmacy Website</p>
+    </footer>
+
+    <script>
+        var isReadMore = false;
+        var aboutText = document.getElementById('about-text');
+        var readMoreBtn = document.getElementById('read-more-btn');
+
+        function toggleReadMore() {
+            isReadMore = !isReadMore;
+            if (isReadMore) {
+                aboutText.innerHTML = "<strong>We are a trusted pharmacy, rooted in a rich legacy of service to our community's health needs. Our journey began in 1841, starting as a humble dispensary and evolving into a beacon of health and beauty. Today, we proudly stand as the world's largest international health and beauty retailer, with a vast network of over 16,100 stores across 28 markets.The AS Project Group holds a unique position, being one of the longest-standing companies in Malaysia and possibly even the world. Our enduring legacy speaks to our unwavering commitment to excellence and service.At the heart of our mission is a dedication to providing high-quality products and services. We understand the evolving needs of our customers and strive to meet them with care and integrity. </strong>";
+                readMoreBtn.innerHTML = "Read Less";
+            } else {
+                aboutText.innerHTML = "<strong>We are a trusted pharmacy dedicated to serving our community's health needs. Established in 1841, we've grown from just one small dispensary into the world's largest international health & beauty retailer, operating over 16,100 stores in 28 markets. AS Project Group is one of the longest-standing companies in Malaysia, and possibly even the world. We are committed to providing high-quality products and services to our customers</strong>";
+                readMoreBtn.innerHTML = "Read More";
+            }
+        }</script>
+    </body>
+    </html>
